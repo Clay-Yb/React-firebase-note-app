@@ -1,0 +1,79 @@
+.note {
+	width: 270px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+
+	.note_header {
+		h4 {
+			padding: 0.75rem 0.5rem;
+		}
+	}
+
+	.note_middle {
+		height: 100%;
+
+		p {
+			padding: 0.5rem;
+		}
+	}
+
+	.note_footer {
+		.footer_div {
+			padding: 0.75rem 0.5rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			span {
+				font-size: 0.85rem;
+			}
+
+			.dropdown_container {
+				position: relative;
+
+				.dots {
+					display: inline-flex;
+					background-color: transparent;
+					outline: none;
+					border: none;
+				}
+				&:hover .dropdown {
+					transform: scale(1);
+				}
+				.dropdown {
+					background-color: #fff;
+					box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+					position: absolute;
+					top: -4.5rem;
+					left: -5.5rem;
+					width: 100px;
+					border-radius: 4px;
+					transform: scale(0);
+					transform-origin: right bottom;
+					transition: all 0.5s;
+
+					button {
+						background-color: transparent;
+						border: none;
+						outline: none;
+						display: flex;
+						align-items: center;
+						gap: 0.5rem;
+						padding: 0.5rem;
+						padding-left: 0.75rem;
+						width: 100%;
+						transition: all 0.5s;
+
+						&:hover {
+							background-color: #f5f5f5;
+						}
+					}
+				}
+			}
+		}
+	}
+}

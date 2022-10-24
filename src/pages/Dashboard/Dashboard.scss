@@ -1,0 +1,43 @@
+.main_content {
+	padding: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+
+	.addnote_div {
+		background-color: #fff;
+		width: 270px;
+		height: 300px;
+		padding: 2rem;
+		border-radius: 5px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		button {
+			background-color: transparent;
+			outline: none;
+			border: none;
+
+			p {
+				border: 2px dashed royalblue;
+				border-radius: 50%;
+				width: 7.5rem;
+				height: 7.5rem;
+				display: grid;
+				place-items: center;
+				margin: auto;
+				color: royalblue;
+				font-size: 2rem;
+			}
+
+			span {
+				margin-top: 0.5rem;
+				display: block;
+				font-size: 1.2rem;
+				color: royalblue;
+			}
+		}
+	}
+}

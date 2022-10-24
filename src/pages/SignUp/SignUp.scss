@@ -1,0 +1,148 @@
+.signup_page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+
+	.signup_page-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+
+		.signup_img {
+			img {
+				width: 100%;
+				height: 500px;
+			}
+		}
+
+		.signup_form-container {
+			justify-self: center;
+			max-width: 500px;
+			width: 100%;
+			background-color: #fff;
+			padding: 1.25rem;
+			border-radius: 6px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+			h2 {
+				font-size: 1.8rem;
+				font-weight: 500;
+				margin-bottom: 1rem;
+			}
+
+			.form-username {
+				display: flex;
+				gap: 1rem;
+				margin-bottom: 1rem;
+
+				input {
+					width: 100%;
+					height: 2.5rem;
+					border-radius: 6px;
+					border: 1px solid gray;
+					outline: none;
+					padding-left: 0.5rem;
+
+					&:focus {
+						outline: 1px solid royalblue;
+					}
+				}
+			}
+
+			.same_input {
+				width: 100%;
+				height: 2.5rem;
+				border-radius: 6px;
+				border: 1px solid gray;
+				outline: none;
+				padding-left: 0.5rem;
+				margin-bottom: 1rem;
+
+				&:focus {
+					outline: 1px solid royalblue;
+				}
+
+				&.error {
+					outline: 1px solid red;
+				}
+			}
+
+			.form-dob {
+				margin-bottom: 1rem;
+				span {
+					font-size: 0.8rem;
+					display: block;
+				}
+
+				.select_container {
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+					justify-content: space-between;
+					select {
+						height: 2.5rem;
+						width: 100%;
+						border-radius: 6px;
+						outline: none;
+						padding-left: 0.2rem;
+					}
+				}
+			}
+
+			.form-gender {
+				span {
+					display: block;
+					font-size: 0.8rem;
+				}
+
+				.label_container {
+					display: flex;
+					gap: 1rem;
+					label {
+						border: 1px solid gray;
+						height: 2.5rem;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						border-radius: 6px;
+						width: 120px;
+						padding: 0 0.5rem;
+					}
+				}
+			}
+
+			.signup_btn {
+				display: grid;
+				width: 180px;
+				margin: 2rem auto 0;
+				background-color: #00a400;
+				color: #fff;
+				border: none;
+				outline: none;
+				font-size: 500;
+				font-size: 0.95rem;
+				padding: 0.35rem 0;
+				border-radius: 6px;
+				transition: all 0.4s;
+
+				&:hover {
+					background-color: #036a03;
+				}
+			}
+
+			.already {
+				margin-top: 1rem;
+				text-align: center;
+				display: block;
+				font-size: 0.9rem;
+
+				a {
+					color: royalblue;
+				}
+			}
+		}
+	}
+}
